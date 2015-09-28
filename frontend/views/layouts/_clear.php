@@ -7,6 +7,9 @@ use \frontend\modules\user\models\LoginForm;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model \frontend\modules\user\models\LoginForm */
 
+$model = new LoginForm();
+
+
 \frontend\assets\FrontendAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
