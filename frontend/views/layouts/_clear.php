@@ -1,11 +1,11 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
-/* @var $form yii\widgets\ActiveForm */
-/* @var $model \frontend\modules\user\models\LoginForm */
+use \frontend\modules\user\models\LoginForm;
 /* @var $this \yii\web\View */
 /* @var $content string */
+/* @var $form yii\widgets\ActiveForm */
+/* @var $model \frontend\modules\user\models\LoginForm */
 
 \frontend\assets\FrontendAsset::register($this);
 ?>
