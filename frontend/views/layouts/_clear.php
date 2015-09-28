@@ -1,5 +1,9 @@
 <?php
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+/* @var $form yii\widgets\ActiveForm */
+/* @var $model \frontend\modules\user\models\LoginForm */
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -253,6 +257,17 @@ use yii\helpers\Html;
                 <div class=content-subtitle>email</div>
                 <div class="rule left"></div>
                 <div class=content-subtitle><a class=email target=_blank href=mailto:hello@rzr.io>hello@rzr.io</a></div>
+            </div>
+            <div class=content-info>
+
+                <?php $form = ActiveForm::begin(['id' => 'login-form','class' => 'form']); ?>
+
+
+                <span class=settings-name><?php echo $form->field($model, 'identity') ?></span>
+                <span class=settings-name><?php echo $form->field($model, 'password')->passwordInput() ?></span>
+                <span class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
+                <?php ActiveForm::end(); ?>
+
             </div>
         </div>
         <br></section>
