@@ -262,7 +262,9 @@ $model = new LoginForm();
                 <div class=content-subtitle><a class=email target=_blank href=mailto:hello@rzr.io>hello@rzr.io</a></div>
             </div>
             <div class=content-info>
-
+                <div class=content-title-fake></div>
+                <div class=content-subtitle>Login</div>
+                <div class="rule left"></div>
                 <?php $form = ActiveForm::begin(['id' => 'login-form','class' => 'form']); ?>
 
 
