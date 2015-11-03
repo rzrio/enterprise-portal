@@ -46,7 +46,7 @@ $this->title = "rzr.io"
                                 <span class="frame-number highlight">1</span>
                             </div>
                             <div class=assets-info>
-                                <?php if(Yii::$app->user->isGuest) ?>
+                                <?php if(Yii::$app->user->isGuest): ?>
                                 <div class=current-info>
 
                                     <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
