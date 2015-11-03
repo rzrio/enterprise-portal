@@ -15,14 +15,14 @@ $this->title = "rzr.io"
     <div id=thumbContainer class=gallery-thumb-container>
         <div class=thumb-wrapper>
             <a data-model=1 class="gallery-thumb active"><span class=thumb-date>DeOS.01</span></a>
-            <a data-model=2 class=gallery-thumb><span class=thumb-date>Frame.02</span></a>
-            <a data-model=3 class=gallery-thumb><span class=thumb-date>Frame.03</span></a>
-            <a data-model=4 class=gallery-thumb><span class=thumb-date>Frame.04</span></a>
-            <a data-model=5 class=gallery-thumb><span class=thumb-date>Frame.05</span></a>
-            <a data-model=6 class=gallery-thumb><span class=thumb-date>Frame.06</span></a>
-            <a data-model=7 class=gallery-thumb><span class=thumb-date>Frame.07</span></a>
-            <a data-model=8 class=gallery-thumb><span class=thumb-date>Frame.08</span></a>
-            <a data-model=9 class=gallery-thumb><span class=thumb-date>Frame.09</span></a>
+            <a data-model=2 class=gallery-thumb><span class=thumb-date>DeOS.02</span></a>
+            <a data-model=3 class=gallery-thumb><span class=thumb-date>DeOS.03</span></a>
+            <a data-model=4 class=gallery-thumb><span class=thumb-date>DeOS.04</span></a>
+            <a data-model=5 class=gallery-thumb><span class=thumb-date>DeOS.05</span></a>
+            <a data-model=6 class=gallery-thumb><span class=thumb-date>DeOS.06</span></a>
+            <a data-model=7 class=gallery-thumb><span class=thumb-date>DeOS.07</span></a>
+            <a data-model=8 class=gallery-thumb><span class=thumb-date>DeOS.08</span></a>
+            <a data-model=9 class=gallery-thumb><span class=thumb-date>DeOS.09</span></a>
         </div>
         <div id=thumbOverlay class="thumb-overlay pos1"></div>
     </div>
