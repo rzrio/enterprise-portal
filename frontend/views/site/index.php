@@ -91,7 +91,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">2</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -122,7 +122,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">3</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -153,7 +153,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">4</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -184,7 +184,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">5</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -215,7 +215,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">6</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -246,7 +246,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">7</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -281,7 +281,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">8</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
@@ -312,7 +312,7 @@ $this->title = "rzr.io"
                     <div class=diagonal-overlay-left></div>
                     <div class="section-content gallery-content">
                         <div class=content-left>
-                            <div class=content-title><span>Frame</span> <span
+                            <div class=content-title><span>DeOS</span> <span
                                     class="frame-number highlight">9</span></div>
                             <div class=assets-info>
                                 <div class=current-info><span class=settings-name>Date</span><span
