@@ -69,6 +69,11 @@ $this->title = "rzr.io"
 
                                 </div>
                             </div>
+                                <?php else ?>
+                                    <div class="current-info">
+
+                                    Welcome <?php echo Yii::$app->user->identity->username ?>
+                                        </div>
                                 <?php endif; ?>
                         </div>
                     </div>
