@@ -45,7 +45,20 @@ $this->title = "rzr.io"
                                 <span>DeOS</span>
                                 <span class="frame-number highlight">1</span>
                             </div>
+                            <div class=assets-info>
+                                <div class=current-info>
 
+                                    <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
+
+
+                                    <span class=settings-name><?php echo $form->field($model, 'identity') ?></span>
+                                    <span
+                                        class=settings-name><?php echo $form->field($model, 'password')->passwordInput() ?></span>
+                                    <span
+                                        class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
+                                    <?php ActiveForm::end(); ?>
+
+                                </div>
                             <div class=assets-info>
                                 <div class="rule right"></div>
                                 <div class=current-info>
@@ -54,6 +67,7 @@ $this->title = "rzr.io"
 
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </li>

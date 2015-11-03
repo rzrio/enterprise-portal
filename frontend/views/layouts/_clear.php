@@ -221,18 +221,6 @@ $model = new LoginForm();
                 <div class="rule left"></div>
                 <span class=description>DeOS is coming and we're looking forward to it! For the first time in decades we will have the opportunity to change how to surf the web. </span>
             </div>
-            <div class="content-info">
-            <div class=content-title-fake></div>
-            <div class=content-subtitle>Login</div>
-            <div class="rule left"></div>
-            <?php $form = ActiveForm::begin(['id' => 'login-form','class' => 'form']); ?>
-
-
-            <span class=settings-name><?php echo $form->field($model, 'identity') ?></span>
-            <span class=settings-name><?php echo $form->field($model, 'password')->passwordInput() ?></span>
-            <span class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
-            <?php ActiveForm::end(); ?>
-            </div>
         </div>
     </section>
     <!-- SECTION ABOUT END-->
