@@ -12,33 +12,17 @@ $this->title = "rzr.io"
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-<div id="container1" style="position: absolute; left: 80px; width: 50%; max-height: 50%; z-index: 60000"></div>
+<div id="container1" style="position: absolute; top: 200px; left: 80px; width: 50%; max-height: 50%; z-index: 60000"></div>
 
 
 <script>
     //basic map config with custom fills, mercator projection
     var map = new Datamap({
         scope: 'world',
-        element: document.getElementById('container1'),
-        projection: 'mercator',
-        height: 500,
-        fills: {
-            defaultFill: '#dddddd',
-            lt50: 'rgba(88,88,88,0.9)',
-            gt50: 'red'
-        },
-
-        data: {
-            USA: {fillKey: 'lt50' },
-            RUS: {fillKey: 'lt50' },
-            CAN: {fillKey: 'lt50' },
-            BRA: {fillKey: 'gt50' },
-            ARG: {fillKey: 'gt50'},
-            COL: {fillKey: 'gt50' },
-            AUS: {fillKey: 'gt50' },
-            ZAF: {fillKey: 'gt50' },
-            MAD: {fillKey: 'gt50' }
+        element: document.getElementById('container1')
         }
+
+
     })
 
 
