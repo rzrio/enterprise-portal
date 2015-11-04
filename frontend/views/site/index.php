@@ -12,7 +12,7 @@ $this->title = "rzr.io"
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-<div id="container1" style="position: absolute; top: 200px; left: 80px; width: 50%; height: 800px; z-index: 60000"></div>
+<div id="container1" style="position: absolute; top: 200px; left: 80px; width: 50%; height: 800px; margin: 0 auto; z-index: 60000"></div>
 
 
 <script>
