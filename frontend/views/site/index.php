@@ -8,25 +8,6 @@ use yii\widgets\ActiveForm;
 $this->title = "rzr.io"
 ?>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<!-- I recommend you host this file on your own, since this will change without warning -->
-<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-<div id="container1" style="position: absolute; top: 200px; left: 80px; width: 50%; height: 800px; margin: 0 auto; z-index: 60000"></div>
-
-
-<script>
-    //basic map config with custom fills, mercator projection
-    var map = new Datamap({
-        scope: 'world',
-        element: document.getElementById('container1')
-        })
-
-
-
-
-</script>
-
 <!--SECTION GALEERY START -->
 <section id=gallerySection class=section-gallery>
     <div class=diagonal-overlay-right></div>
@@ -94,7 +75,24 @@ $this->title = "rzr.io"
 
                                     Welcome <?php echo Yii::$app->user->identity->username ?>
 
+                                        <script src="http://d3js.org/d3.v3.min.js"></script>
+                                        <script src="http://d3js.org/topojson.v1.min.js"></script>
+                                        <!-- I recommend you host this file on your own, since this will change without warning -->
+                                        <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+                                        <div id="container1" style="position: absolute; top: 200px; left: 80px; height: 800px; margin: 0 auto; z-index: 60000"></div>
 
+
+                                        <script>
+                                            //basic map config with custom fills, mercator projection
+                                            var map = new Datamap({
+                                                scope: 'world',
+                                                element: document.getElementById('container1')
+                                            })
+
+
+
+
+                                        </script>
 
 
                                     </div>
