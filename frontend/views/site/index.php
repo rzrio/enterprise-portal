@@ -79,7 +79,7 @@ $this->title = "rzr.io"
                                         <script src="http://d3js.org/topojson.v1.min.js"></script>
                                         <!-- I recommend you host this file on your own, since this will change without warning -->
                                         <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-                                        <div id="container1" style="position: absolute; left: 80px; top: 200px; width: 80%; max-height: 70%;"></div>
+                                        <div id="container1" style="position: absolute; left: 80px; top: 200px; width: 80%; max-height: 70%; z-index: 60000"></div>
 
 
                                         <script>
