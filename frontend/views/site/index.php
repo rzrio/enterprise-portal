@@ -74,6 +74,46 @@ $this->title = "rzr.io"
 
                                     Welcome <?php echo Yii::$app->user->identity->username ?>
                                         </div>
+
+                                    <script src="http://d3js.org/d3.v3.min.js"></script>
+                                    <script src="http://d3js.org/topojson.v1.min.js"></script>
+                                    <!-- I recommend you host this file on your own, since this will change without warning -->
+                                    <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+                                    <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
+
+
+                                    <script>
+                                        //basic map config with custom fills, mercator projection
+                                        var map = new Datamap({
+                                            scope: 'world',
+                                            element: document.getElementById('container1'),
+                                            projection: 'mercator',
+                                            height: 500,
+                                            fills: {
+                                                defaultFill: '#dddddd',
+                                                lt50: 'rgba(88,88,88,0.9)',
+                                                gt50: 'red'
+                                            },
+
+                                            data: {
+                                                USA: {fillKey: 'lt50' },
+                                                RUS: {fillKey: 'lt50' },
+                                                CAN: {fillKey: 'lt50' },
+                                                BRA: {fillKey: 'gt50' },
+                                                ARG: {fillKey: 'gt50'},
+                                                COL: {fillKey: 'gt50' },
+                                                AUS: {fillKey: 'gt50' },
+                                                ZAF: {fillKey: 'gt50' },
+                                                MAD: {fillKey: 'gt50' }
+                                            }
+                                        })
+
+
+
+
+                                    </script>
+
+
                                 <?php endif; ?>
                         </div>
                     </div>
