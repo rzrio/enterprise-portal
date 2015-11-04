@@ -20,10 +20,7 @@ $this->title = "rzr.io"
     var map = new Datamap({
         scope: 'world',
         element: document.getElementById('container1')
-        }
-
-
-    })
+        })
 
 
 
