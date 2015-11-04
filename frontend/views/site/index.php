@@ -12,7 +12,7 @@ $this->title = "rzr.io"
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-<div id="container1" style="position: absolute; left: 80px; top: 200px; max-height: 80%  z-index: 60000"></div>
+<div id="container1" style="position: absolute; left: 80px; top: 200px; height: 80%  z-index: 60000"></div>
 
 
 <script>
@@ -21,7 +21,7 @@ $this->title = "rzr.io"
         scope: 'world',
         element: document.getElementById('container1'),
         projection: 'mercator',
-        height: 800,
+        height: 1200,
         fills: {
             defaultFill: '#dddddd',
             lt50: 'rgba(88,88,88,0.9)',
