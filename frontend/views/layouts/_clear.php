@@ -29,20 +29,7 @@ $model = new LoginForm();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
 
 <div id=bodyWrapper class=body-wrapper>
-    <!-- Landing page loading screen -->
-    <!-- Landing page intro animation -->
-    <div id=initIntroScreen class=init-intro-screen>
-        <div class=bar-top></div>
-        <div class=bar-bottom></div>
-        <div id=initIntroSubtitle class=subtitle>Razormind presents</div>
-    <!-- fullscreen background video -->
-    <video id=videoBackground class="video-background hide" loop="" autoplay=""></video>
-    <div class=video-overlay></div>
-    <!-- Webgl renderer canvas -->
-    <canvas id=threejsCanvas class=threejs-canvas></canvas>
-    <!-- main menu -->
-
-    <nav id=menu class="menu">
+      <nav id=menu class="menu">
         <ul>
             <li id=creditsAnchor><span>Credits</span></li>
             <li id=contactAnchor><span>Contact</span></li>
