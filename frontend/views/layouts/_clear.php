@@ -85,7 +85,6 @@ $model = new LoginForm();
 
 </div>
 
-<!-- End Attracta Include 2015-06-19 20:56 -->
 <?php $this->endBody() ?>
 
 </body>
