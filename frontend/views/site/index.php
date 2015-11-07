@@ -35,28 +35,7 @@ $this->title = "rzr.io"
 <?php else : ?>
     <div class="current-info">
 
-        Welcome <?php echo Yii::$app->user->identity->username ?>
-
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script src="http://d3js.org/topojson.v1.min.js"></script>
-        <!-- I recommend you host this file on your own, since this will change without warning -->
-        <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-        <div id="container1" style="position: absolute; top: 20px; right: 80px; height: 800px; margin: 0 auto; z-index: 60000"></div>
-
-
-        <script>
-            //basic map config with custom fills, mercator projection
-            var map = new Datamap({
-                scope: 'world',
-                element: document.getElementById('container1'),
-                height: 1000
-            })
-
-
-
-
-        </script>
-
+        <h2> Welcome, you're already logged in.</h2>
 
     </div>
 
