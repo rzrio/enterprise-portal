@@ -6,7 +6,7 @@
 $this->title = $model->title;
 ?>
 
-<div style=" position: absolute; top: 150px; color: white;">
+<div style=" position: absolute; top: 10px; color: white;">
     <h1><?php echo $model->title ?></h1>
 <?php echo $model->body ?>
     </div>
