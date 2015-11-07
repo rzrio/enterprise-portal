@@ -375,10 +375,8 @@ $model = new LoginForm();
         </div>
     </section>
     <!--SECTION SETTINGS END -->
-<div style="top: 300px">
     <?php echo $content ?>
 
-</div>
     <!--FOOTER INFO START -->
     <footer id=footerInfoSection class="footer-section-info hide">
         <div id=footerTitle class=footer-title># Drag the mouse to rotate scene</div>
