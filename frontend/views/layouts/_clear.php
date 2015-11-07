@@ -80,8 +80,7 @@ $model = new LoginForm();
         ]
     ]); ?>
     <?php NavBar::end(); ?>
-</div>
-<div>
+
     <?php echo $content ?>
 
 </div>
