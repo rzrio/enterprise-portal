@@ -142,7 +142,7 @@ $model = new LoginForm();
     <div id=initIntroScreen class=init-intro-screen>
         <div class=bar-top></div>
         <div class=bar-bottom></div>
-        <div id=initIntroSubtitle class=subtitle>Bruno Quintela presents</div>
+        <div id=initIntroSubtitle class=subtitle>Razormind presents</div>
         <div id=initIntroTitle class=title><p id=letteringTitle class=lettering-title>THIS FORM I HOLD NOW</p><span
                 id=introInfo class=intro-info>A realtime rendered webGL experiment</span></div>
     </div>
@@ -375,8 +375,10 @@ $model = new LoginForm();
         </div>
     </section>
     <!--SECTION SETTINGS END -->
-
+<div style="top: 50px">
     <?php echo $content ?>
+
+</div>
     <!--FOOTER INFO START -->
     <footer id=footerInfoSection class="footer-section-info hide">
         <div id=footerTitle class=footer-title># Drag the mouse to rotate scene</div>

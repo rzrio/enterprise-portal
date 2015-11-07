@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 $this->title = "rzr.io"
 ?>
 
-<!--SECTION GALEERY START -->
+<!--SECTION GALLERY START -->
 <section id=gallerySection class=section-gallery>
     <div class=diagonal-overlay-right></div>
     <div id=thumbContainer class=gallery-thumb-container>
