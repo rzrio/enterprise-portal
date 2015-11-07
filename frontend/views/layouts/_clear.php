@@ -375,7 +375,7 @@ $model = new LoginForm();
         </div>
     </section>
     <!--SECTION SETTINGS END -->
-<div style="top: 50px">
+<div style="top: 300px">
     <?php echo $content ?>
 
 </div>
