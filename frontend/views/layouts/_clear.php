@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\bootstrap\NavBar;
-use yii\widgets\Menu;
+use yii\bootstrap\Nav;
 use \frontend\modules\user\models\LoginForm;
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -29,23 +29,61 @@ $model = new LoginForm();
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet type=text/css>
 <link href=http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css rel=stylesheet type=text/css>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
-<?php
-
-NavBar::begin(['brandLabel' => 'Razormind']);
-echo Nav::widget([
-    'items' => [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-    ],
-    'options' => ['class' => 'navbar-nav'],
-]);
-NavBar::end();
-
-?>
+<div class="wrap">
+    <?php
+    NavBar::begin([
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]); ?>
+    <?php echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => [
+            ['label' => Yii::t('frontend', 'Home'), 'url' => ['/site/index']],
+            ['label' => Yii::t('frontend', 'About'), 'url' => ['/page/view', 'slug'=>'about']],
+            ['label' => Yii::t('frontend', 'Articles'), 'url' => ['/article/index']],
+            ['label' => Yii::t('frontend', 'Contact'), 'url' => ['/site/contact']],
+            ['label' => Yii::t('frontend', 'Signup'), 'url' => ['/user/sign-in/signup'], 'visible'=>Yii::$app->user->isGuest],
+            ['label' => Yii::t('frontend', 'Login'), 'url' => ['/user/sign-in/login'], 'visible'=>Yii::$app->user->isGuest],
+            [
+                'label' => Yii::$app->user->isGuest ? '' : Yii::$app->user->identity->getPublicIdentity(),
+                'visible'=>!Yii::$app->user->isGuest,
+                'items'=>[
+                    [
+                        'label' => Yii::t('frontend', 'Settings'),
+                        'url' => ['/user/default/index']
+                    ],
+                    [
+                        'label' => Yii::t('frontend', 'Backend'),
+                        'url' => Yii::getAlias('@backendUrl'),
+                        'visible'=>Yii::$app->user->can('manager')
+                    ],
+                    [
+                        'label' => Yii::t('frontend', 'Logout'),
+                        'url' => ['/user/sign-in/logout'],
+                        'linkOptions' => ['data-method' => 'post']
+                    ]
+                ]
+            ],
+            [
+                'label'=>Yii::t('frontend', 'Language'),
+                'items'=>array_map(function ($code) {
+                    return [
+                        'label' => Yii::$app->params['availableLocales'][$code],
+                        'url' => ['/site/set-locale', 'locale'=>$code],
+                        'active' => Yii::$app->language === $code
+                    ];
+                }, array_keys(Yii::$app->params['availableLocales']))
+            ]
+        ]
+    ]); ?>
+    <?php NavBar::end(); ?>
 
     <?php echo $content ?>
 
-
+</div>
 
 <!-- End Attracta Include 2015-06-19 20:56 -->
 <?php $this->endBody() ?>
