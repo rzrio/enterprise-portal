@@ -24,18 +24,11 @@ $this->title = "rzr.io"
 
     </div>
 
-    <div class=assets-info>
-        <div class="rule right"></div>
-        <div class=current-info>
-            <button data-model=1 data-assets=4 class="button button-load load-webgl">Login
-            </button>
 
-        </div>
-    </div>
 <?php else : ?>
     <div class="current-info">
 
-        <h2> Welcome, you're already logged in.</h2>
+        <h2> Welcome <?= Yii::$app->user->identity->username ?>, you're already logged in.</h2>
 
     </div>
 

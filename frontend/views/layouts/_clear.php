@@ -1,6 +1,8 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\bootstrap\NavBar;
+use yii\widgets\Menu;
 use \frontend\modules\user\models\LoginForm;
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -27,38 +29,19 @@ $model = new LoginForm();
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet type=text/css>
 <link href=http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css rel=stylesheet type=text/css>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+<?php
 
-<div id=bodyWrapper class=body-wrapper>
-      <nav id=menu class="menu">
-        <ul>
-            <li id=creditsAnchor><span>Credits</span></li>
-            <li id=contactAnchor><span>Contact</span></li>
-            <li id=aboutAnchor><span>About</span></li>
-            <li id=galleryAnchor><span>Portfolio</span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li id=homeAnchor class=active><span><b>RZR</b>.IO</span></li>
-        </ul>
-        <div id=menuItemActive class=item-active-bottom>
-            <div class="menu-handler left"></div>
-            <!--div class="menu-handler right"></div--></div>
-    </nav>
-    <!-- burguer menu and fullscreen nav -->
-    <div id=burguerMenu class="burguer-container hide">
-        <div id=burguerTitle class=burguer-title>::Home</div>
-        <a id=trigger-overlay class=burger href=#><span></span></a></div>
-    <div class=burguer-overlay>
-        <nav>
-            <ul>
-                <li><a id=aboutBurguerItem href=#>About</a></li>
-                <li><a id=galleryBurguerItem href=#>Portfolio</a></li>
-                <li><a id=contactBurguerItem href=#>Contact</a></li>
-                <li><a id=creditsBurguerItem href=#>Credits</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
+NavBar::begin(['brandLabel' => 'Razormind']);
+echo Nav::widget([
+    'items' => [
+        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'About', 'url' => ['/site/about']],
+    ],
+    'options' => ['class' => 'navbar-nav'],
+]);
+NavBar::end();
+
+?>
 
     <?php echo $content ?>
 
