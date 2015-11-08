@@ -53,6 +53,11 @@ class SiteController extends Controller
             return $this->render('semver');
     }
 
+    public function actionWorldmap()
+    {
+        return $this->render('worldmap');
+    }
+
     public function actionContact()
     {
         $model = new ContactForm();
