@@ -13,5 +13,28 @@ $this->title = "World Map"
 <script src="/js/datamaps.world.min.js"></script>
 <div id="rzr-world-map" style="position: relative; width: 1024px; height: 768px;"></div>
 <script>
-    var map = new Datamap({element: document.getElementById('rzr-world-map')});
+    var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('rzr-world-map'),
+        projection: 'mercator',
+        fills: {
+            defaultFill: '#dddddd',
+            stable: 'black',
+            activated: 'red'
+        },
+
+        data: {
+            USA: {fillKey: 'stable' },
+            RUS: {fillKey: 'stable' },
+            CAN: {fillKey: 'stable' },
+            BRA: {fillKey: 'activated' },
+            ARG: {fillKey: 'activated'},
+            COL: {fillKey: 'activated' },
+            AUS: {fillKey: 'activated' },
+            ZAF: {fillKey: 'activated' },
+            MAD: {fillKey: 'activated' }
+        }
+    })
+
+
 </script>
