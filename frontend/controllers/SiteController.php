@@ -50,7 +50,7 @@ class SiteController extends Controller
 
     public function actionSemver()
     {
-            return $this->render('samver');
+            return $this->render('semver');
     }
 
     public function actionContact()
