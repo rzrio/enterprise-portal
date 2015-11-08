@@ -41,9 +41,6 @@ $this->title = "World Map"
         map.resize();
     });
 
-    //alternatively with d3
-    d3.select(window).on('resize', function() {
-        map.resize();
-    });
+
 
 </script>
