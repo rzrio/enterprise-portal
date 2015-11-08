@@ -48,6 +48,11 @@ class SiteController extends Controller
         }
     }
 
+    public function actionSemver()
+    {
+            return $this->render('samver');
+    }
+
     public function actionContact()
     {
         $model = new ContactForm();
