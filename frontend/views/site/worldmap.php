@@ -10,7 +10,7 @@ $this->title = "World Map"
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="/datamaps.world.min.js"></script>
+<script src="/js/datamaps.world.min.js"></script>
 <div id="rzr-world-map" style="position: relative; width: 800px; height: 600px;"></div>
 <script>
     var map = new Datamap({element: document.getElementById('rzr-world-map')});
