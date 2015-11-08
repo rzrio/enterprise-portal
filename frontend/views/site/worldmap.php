@@ -11,7 +11,7 @@ $this->title = "World Map"
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="/js/datamaps.world.min.js"></script>
-<div id="rzr-world-map" style="position: relative; width: 80%; max-height: 768px;"></div>
+<div id="rzr-world-map" style="position: relative; top: -50px; width: 80%; max-height: 768px;"></div>
 <script>
     var map = new Datamap({
         scope: 'world',
