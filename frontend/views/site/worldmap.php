@@ -11,10 +11,11 @@ $this->title = "World Map"
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="/js/datamaps.world.min.js"></script>
-<div id="rzr-world-map" style="position: relative; width: 1024px; height: 768px;"></div>
+<div id="rzr-world-map" style="position: relative; width: 1024px; max-height: 768px;"></div>
 <script>
     var map = new Datamap({
         scope: 'world',
+        responsive: true,
         element: document.getElementById('rzr-world-map'),
         projection: 'mercator',
         fills: {
@@ -36,5 +37,13 @@ $this->title = "World Map"
         }
     })
 
+    window.addEventListener('resize', function() {
+        map.resize();
+    });
+
+    //alternatively with d3
+    d3.select(window).on('resize', function() {
+        map.resize();
+    });
 
 </script>
