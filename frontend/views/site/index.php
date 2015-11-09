@@ -35,6 +35,8 @@ $this->title = "rzr.io"
             <ul class="nav nav-pills">
                 <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
                 <li><a data-toggle="pill" href="#partners">Partners</a></li>
+                <li><a data-toggle="pill" href="#opps">Opportunities</a></li>
+                <li><a data-toggle="pill" href="#tech">Technology</a></li>
                 <li><a data-toggle="pill" href="#contracts">Contracts</a></li>
                 <li><a data-toggle="pill" href="#sales">Sales</a></li>
             </ul>
@@ -47,16 +49,25 @@ $this->title = "rzr.io"
                 <div id="partners" class="tab-pane fade">
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Partner Table</p>
 
-                    <?= $this->render( 'overview'); ?>
+                </div>
 
+                <div id="opps" class="tab-pane fade">
+                    <h3>Opportunities</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Opportunities Table</p>
+                </div>
+
+                <div id="tech" class="tab-pane fade">
+                    <h3>Tech</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Tech Table</p>
 
                 </div>
                 <div id="contracts" class="tab-pane fade">
                     <h3>Contracts</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    <?= $this->render( 'now'); ?>
-
 
                 </div>
                 <div id="sales" class="tab-pane fade">
