@@ -58,6 +58,11 @@ class SiteController extends Controller
         return $this->render('now');
     }
 
+    public function actionOverview()
+    {
+        return $this->render('overview');
+    }
+
     public function actionWorldmap()
     {
         return $this->render('worldmap');
