@@ -47,10 +47,17 @@ $this->title = "rzr.io"
                 <div id="partners" class="tab-pane fade">
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <?= $this->render( 'overview'); ?>
+
+
                 </div>
                 <div id="contracts" class="tab-pane fade">
                     <h3>Contracts</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <?= $this->render( 'now'); ?>
+
+
                 </div>
                 <div id="sales" class="tab-pane fade">
                     <h3>Sales</h3>
