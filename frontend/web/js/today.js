@@ -18,7 +18,7 @@ var buttonLock = 0;
 
 // DRAWING CONSTANTS //
 var noiseImg = new Image();
-noiseImg.src = 'img/spatter.gif';
+noiseImg.src = '/img/spatter.gif';
 
 var copyColor = "#FFF";
 var bgColor = "#101317";

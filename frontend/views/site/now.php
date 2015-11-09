@@ -7,9 +7,9 @@
  */
 ?>
 
-<script type="text/javascript" src="js/today.js"></script>
+<script type="text/javascript" src="/js/today.js"></script>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-<link href="css/todayStyle.css" rel="stylesheet" type="text/css" />
+<link href="/css/todayStyle.css" rel="stylesheet" type="text/css" />
 
 <canvas id="layerA"></canvas>
 
