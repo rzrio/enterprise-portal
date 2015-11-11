@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Html;
-use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
@@ -53,7 +52,7 @@ $this->title = "rzr.io"
                 <div id="partners" class="tab-pane fade">
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Partner Table: <?= Url::to(['partner/index']) ?></p>
+                    <p>Partner Table: <?= Html::a('Here', ['partner/index']) ?></p>
                 </div>
 
                 <div id="opps" class="tab-pane fade">
