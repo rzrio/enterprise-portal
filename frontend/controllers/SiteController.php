@@ -8,6 +8,9 @@ use common\models\User;
 use app\models\Partner;
 use app\models\PartnerSearch;
 
+$searchModel = new PartnerSearch();
+$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
 use frontend\modules\user\models\LoginForm;
 /**
  * Site controller
@@ -36,8 +39,6 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $searchModel = new PartnerSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         $model = new LoginForm();
         if (Yii::$app->request->isAjax) {
