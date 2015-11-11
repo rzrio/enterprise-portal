@@ -50,8 +50,6 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
                 'model' => $model
             ]);
         }
