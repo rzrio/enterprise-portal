@@ -52,14 +52,7 @@ $this->title = "rzr.io"
                 <div id="partners" class="tab-pane fade">
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Partner Table</p>
-
-                    <?php
-
-                        $this->render("/partner/index");
-
-                    ?>
-
+                    <p>Partner Table: <?= Url::to(['partner/index']) ?></p>
                 </div>
 
                 <div id="opps" class="tab-pane fade">
