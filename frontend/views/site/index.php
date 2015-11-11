@@ -52,7 +52,7 @@ $this->title = "rzr.io"
                     <p>Partner Table</p>
                     <?php
 
-                        $this->render("partner/index");
+                        $this->render('partner/index');
 
                         ?>
 
