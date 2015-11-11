@@ -56,10 +56,7 @@ $this->title = "rzr.io"
 
                     <?php
 
-                        $this->render("/partner/index", [
-                            'searchModel' => $searchModel,
-                            'dataProvider' => $dataProvider,
-                        ]);
+                        $this->render("/partner/index");
 
                     ?>
 
