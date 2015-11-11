@@ -58,7 +58,8 @@ $this->title = "rzr.io"
 
                         $this->render("/partner/index", [
                             'searchModel' => $searchModel,
-                            'dataProvider' => $dataProvider,);
+                            'dataProvider' => $dataProvider,
+                        ]);
 
                     ?>
 
