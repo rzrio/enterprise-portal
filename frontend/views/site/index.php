@@ -50,6 +50,11 @@ $this->title = "rzr.io"
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Partner Table</p>
+                    <?php
+
+                        $this->render("partner/index");
+
+                        ?>
 
                 </div>
 
