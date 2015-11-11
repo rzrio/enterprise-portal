@@ -5,6 +5,9 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model \frontend\modules\user\models\LoginForm */
+/* @var $searchModel app\models\PartnerSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
 $this->title = "rzr.io"
 ?>
 
@@ -50,6 +53,14 @@ $this->title = "rzr.io"
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Partner Table</p>
+
+                    <?php
+
+                        $this->render("/partner/index", [
+                            'searchModel' => $searchModel,
+                            'dataProvider' => $dataProvider,);
+
+                    ?>
 
                 </div>
 
