@@ -5,6 +5,9 @@ use Yii;
 use frontend\models\ContactForm;
 use yii\web\Controller;
 use common\models\User;
+use app\models\Partner;
+use app\models\PartnerSearch;
+
 use frontend\modules\user\models\LoginForm;
 /**
  * Site controller
@@ -33,6 +36,9 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        $searchModel = new PartnerSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
         $model = new LoginForm();
         if (Yii::$app->request->isAjax) {
             $model->load($_POST);
@@ -43,6 +49,8 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
                 'model' => $model
             ]);
         }
