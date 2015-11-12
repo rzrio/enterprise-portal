@@ -59,10 +59,7 @@ $this->title = "rzr.io"
                     $partnerlist = Partner::find()
                     ->all();
 
-                    foreach ($partnerlist->models as $model) {
-                        echo $model->name;
-                    }
-
+                    echo $partnerlist->toArray();
 
                     ?>
                 </div>
