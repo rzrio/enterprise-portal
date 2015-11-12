@@ -1,4 +1,5 @@
 <?php
+use app\models\Partner;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -53,6 +54,17 @@ $this->title = "rzr.io"
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Partner Table: <?= Html::a('Here', ['partner/index']) ?></p>
+                    <?php
+
+                    $partnerlist = Partner::find()
+                    ->all();
+
+                    foreach ($partnerlist->models as $model) {
+                        echo $model->name;
+                    }
+
+
+                    ?>
                 </div>
 
                 <div id="opps" class="tab-pane fade">
