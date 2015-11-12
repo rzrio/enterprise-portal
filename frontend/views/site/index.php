@@ -61,7 +61,9 @@ $this->title = "rzr.io"
                     foreach (Partner::find()->each() as $partner){
 
 
-                    echo "<li> $partner->name </li>";
+                    echo "<li>  $partner->name " . Html::a('Here', ['partner/index'])  . "</li>";
+
+
                     }
 
                     ?>
