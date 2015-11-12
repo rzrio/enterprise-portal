@@ -56,10 +56,11 @@ $this->title = "rzr.io"
                     <p>Partner Table: <?= Html::a('Here', ['partner/index']) ?></p>
                     <?php
 
-                    $partnerlist = Partner::find()
-                    ->all();
+                    foreach (Partner::find()->each() as $partner){
 
-                    echo $partnerlist->toArray();
+
+                    echo $partner->name;
+                    }
 
                     ?>
                 </div>
