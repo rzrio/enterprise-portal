@@ -54,15 +54,18 @@ $this->title = "rzr.io"
                     <h3>Partners</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Partner Table: <?= Html::a('Here', ['partner/index']) ?></p>
+
+                    <ul>
                     <?php
 
                     foreach (Partner::find()->each() as $partner){
 
 
-                    echo $partner->name;
+                    echo "<li> $partner->name </li>";
                     }
 
                     ?>
+                    </ul>
                 </div>
 
                 <div id="opps" class="tab-pane fade">
