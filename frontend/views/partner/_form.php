@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'user_creator')->textInput() ?>
 
-    <?= $form->field($model, 'url')->textInput() ?>
+    <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'address')->textarea(['rows' => 6]) ?>
 

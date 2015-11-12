@@ -11,9 +11,9 @@ use Yii;
  * @property string $name
  * @property string $description
  * @property integer $user_creator
- * @property integer $url
+ * @property string $url
  * @property string $address
- * @property integer $partnership_date
+ * @property string $partnership_date
  * @property string $nda
  * @property string $msa
  * @property string $agreement
@@ -39,8 +39,9 @@ class Partner extends \yii\db\ActiveRecord
         return [
             [['name', 'description', 'user_creator', 'url', 'address', 'partnership_date', 'nda', 'msa', 'agreement', 'tier', 'tags', 'categories'], 'required'],
             [['description', 'address', 'nda', 'msa', 'agreement', 'tags', 'categories'], 'string'],
-            [['user_creator', 'url', 'partnership_date', 'tier'], 'integer'],
-            [['name'], 'string', 'max' => 40]
+            [['user_creator', 'tier'], 'integer'],
+            [['partnership_date'], 'safe'],
+            [['name', 'url'], 'string', 'max' => 40]
         ];
     }
 

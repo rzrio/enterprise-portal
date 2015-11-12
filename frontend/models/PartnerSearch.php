@@ -18,8 +18,8 @@ class PartnerSearch extends Partner
     public function rules()
     {
         return [
-            [['id', 'user_creator', 'url', 'partnership_date', 'tier'], 'integer'],
-            [['name', 'description', 'address', 'nda', 'msa', 'agreement', 'tags', 'categories'], 'safe'],
+            [['id', 'user_creator', 'tier'], 'integer'],
+            [['name', 'description', 'url', 'address', 'partnership_date', 'nda', 'msa', 'agreement', 'tags', 'categories'], 'safe'],
         ];
     }
 
@@ -58,13 +58,13 @@ class PartnerSearch extends Partner
         $query->andFilterWhere([
             'id' => $this->id,
             'user_creator' => $this->user_creator,
-            'url' => $this->url,
             'partnership_date' => $this->partnership_date,
             'tier' => $this->tier,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'url', $this->url])
             ->andFilterWhere(['like', 'address', $this->address])
             ->andFilterWhere(['like', 'nda', $this->nda])
             ->andFilterWhere(['like', 'msa', $this->msa])
