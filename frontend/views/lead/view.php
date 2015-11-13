@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
             array('Innovation', $model->budget_innovation),
             array('Growth', $model->budget_growth)
         ),
-        'options' => array('title' => 'Budget Areas')));
+        'options' => array('title' => 'Budget Divisions')));
     ?>
 
     <?= DetailView::widget([
