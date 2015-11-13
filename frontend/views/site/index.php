@@ -82,7 +82,7 @@ $this->title = "rzr.io"
                         foreach (Lead::find()->each() as $lead){
 
 
-                            echo "<li> " . Html::a($lead->name, $lead->company_url)  . "</li>";
+                            echo "<li> " . Html::a($lead->name, ['lead/view','id' => $lead->id])  . "</li>";
 
 
                         }
