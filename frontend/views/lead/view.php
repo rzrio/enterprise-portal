@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use scotthuangzl\googlechart\GoogleChart;
+
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Lead */
@@ -24,6 +26,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+
+    <?= GoogleChart::widget(array('visualization' => 'PieChart',
+        'data' => array(
+            array('Budget Categories', 'Percent'),
+            array('Mandated', $model->budget_mandated),
+            array('Maintenance', $model->budget_maintenance),
+            array('Innovation', $model->budget_innovation),
+            array('Growth', $model->budget_growth)
+        ),
+        'options' => array('title' => 'Budget Areas')));
+    ?>
 
     <?= DetailView::widget([
         'model' => $model,
