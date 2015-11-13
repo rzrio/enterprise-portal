@@ -1,4 +1,5 @@
 <?php
+use app\models\Lead;
 use app\models\Partner;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -74,6 +75,20 @@ $this->title = "rzr.io"
                     <h3>Opportunities</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Opportunities Table</p>
+
+                    <ul>
+                        <?php
+
+                        foreach (Lead::find()->each() as $lead){
+
+
+                            echo "<li> " . Html::a($lead->name, $lead->company_url)  . "</li>";
+
+
+                        }
+
+                        ?>
+                    </ul>
                 </div>
 
                 <div id="tech" class="tab-pane fade">
