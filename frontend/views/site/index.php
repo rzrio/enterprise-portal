@@ -74,7 +74,7 @@ $this->title = "rzr.io"
                 <div id="opps" class="tab-pane fade">
                     <h3>Opportunities</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Opportunities Table</p>
+                    <p>Opportunities Table: <?= Html::a('Here', ['lead/index']) ?></p>
 
                     <ul>
                         <?php
