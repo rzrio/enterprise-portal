@@ -42,7 +42,7 @@ class Lead extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['company', 'name', 'title', 'cost_reduction_areas', 'endpoints', 'picture'], 'required'],
+            [['company', 'name', 'title'], 'required'],
             [['contacts', 'company_description', 'person_biography', 'investment_priorities', 'platforms', 'cost_reduction_areas', 'endpoints'], 'string'],
             [['budget_tier', 'budget_mandated', 'budget_maintenance', 'budget_innovation', 'budget_growth'], 'integer'],
             [['company', 'company_url', 'name', 'title', 'picture'], 'string', 'max' => 50]
