@@ -79,7 +79,7 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
             'platforms:ntext',
             'cost_reduction_areas:ntext',
             'endpoints:ntext',
-            'picture',
+            'picture:image',
         ],
     ]) ?>
 
