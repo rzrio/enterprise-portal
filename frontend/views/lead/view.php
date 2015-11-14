@@ -20,16 +20,15 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
+    <h3>Personal Bio</h3>
+    <p> <?= Html::encode($model->person_biography) ?> </p>
+
+    <h3> <?= Html::a($model->company, $model->company_url) ?> </h3>
+
+    <p> <?= Html::encode($model->company_description) ?> </p>
+
+
+
 
     <h3> Confirmed Budget: <?= $budgetsize->description ?> </h3>
 
@@ -43,7 +42,15 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         ),
         'options' => array('title' => 'Budget Divisions')));
     ?>
-
+<p>    <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+    <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        'class' => 'btn btn-danger',
+        'data' => [
+            'confirm' => 'Are you sure you want to delete this item?',
+            'method' => 'post',
+        ],
+    ]) ?>
+</p>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
