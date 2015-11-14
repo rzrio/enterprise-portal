@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use frontend\models\BudgetTier;
 use scotthuangzl\googlechart\GoogleChart;
 
 
@@ -11,6 +12,9 @@ use scotthuangzl\googlechart\GoogleChart;
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Leads', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+
+$budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
+
 ?>
 <div class="lead-view">
 
@@ -26,6 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+
+    <h2>    <?= $budgetsize->description ?> </h2>
 
     <?= GoogleChart::widget(array('visualization' => 'PieChart',
         'data' => array(
