@@ -21,14 +21,21 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
     <h1><?= Html::encode($this->title) ?></h1>
 
     <h3>Personal Bio</h3>
+
+    <p> Name: <?= Html::encode($model->name) ?> </p>
+    <p> Title: <?= Html::encode($model->title) ?> </p>
+
     <p> <?= Html::encode($model->person_biography) ?> </p>
 
     <h3> <?= Html::a($model->company, $model->company_url) ?> </h3>
 
     <p> <?= Html::encode($model->company_description) ?> </p>
 
+    <h4> Endpoints: <?= Html::encode($model->endpoints) ?> </h4>
 
+    <h4> Platforms: <?= Html::encode($model->platforms) ?> </h4>
 
+    <h3> Cost Reduction Areas <?= Html::encode($model->cost_reduction_areas) ?></h3>
 
     <h3> Confirmed Budget: <?= $budgetsize->description ?> </h3>
 
