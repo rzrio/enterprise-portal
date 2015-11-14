@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use frontend\models\BudgetTier;
+use app\models\BudgetTier;
 use scotthuangzl\googlechart\GoogleChart;
 
 
