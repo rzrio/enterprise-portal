@@ -6,6 +6,7 @@ use app\models\BudgetTier;
 use scotthuangzl\googlechart\GoogleChart;
 
 
+
 /* @var $this yii\web\View */
 /* @var $model app\models\Lead */
 
@@ -82,10 +83,6 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         ],
     ]) ?>
 
-    <?php
-    $displayingthemodel = json_encode($model);
-
-    echo $displayingthemodel;
-    ?>
+    <?= json_encode($model->rules()); ?>
 
 </div>
