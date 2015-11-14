@@ -31,7 +31,7 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         ]) ?>
     </p>
 
-    <h2>    <?= $budgetsize->description ?> </h2>
+    <h3> Budget 2015: <?= $budgetsize->description ?> </h3>
 
     <?= GoogleChart::widget(array('visualization' => 'PieChart',
         'data' => array(
