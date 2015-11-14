@@ -83,6 +83,6 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         ],
     ]) ?>
 
-    <?= json_encode($model->rules()); ?>
+    <?= json_encode($model->attributes); ?>
 
 </div>
