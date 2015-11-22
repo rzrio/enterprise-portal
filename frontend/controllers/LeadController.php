@@ -23,6 +23,18 @@ class LeadController extends Controller
                     'delete' => ['post'],
                 ],
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index','create', 'delete', 'update', 'view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'create', 'delete', 'update', 'view'],
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+
         ];
     }
 
