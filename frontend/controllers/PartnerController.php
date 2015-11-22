@@ -26,16 +26,11 @@ class PartnerController extends Controller
             ],
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['login', 'logout', 'signup'],
+                'only' => ['index','create', 'delete', 'update', 'view'],
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['login', 'signup'],
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'allow' => true,
-                        'actions' => ['logout'],
+                        'actions' => ['index', 'create', 'delete', 'update', 'view'],
                         'roles' => ['@'],
                     ],
                 ],
