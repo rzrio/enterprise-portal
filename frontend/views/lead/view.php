@@ -23,7 +23,7 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
 
     <h4> <?= Html::encode($model->title) ?> </h4>
 
-    <?= Html::img($this->picture);?>
+    <?= Html::img($model->picture);?>
 
     <h3>Personal Bio</h3>
 
