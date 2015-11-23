@@ -60,7 +60,8 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         ],
     ]) ?>
 </p>
-    <?= DetailView::widget([
+
+    <?=/* DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
@@ -82,7 +83,7 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
             'endpoints:ntext',
             'picture:image',
         ],
-    ]) ?>
+    ]) */?>
 
 <!--    <?// json_encode($model->attributes); ?> -->
 
