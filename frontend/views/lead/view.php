@@ -22,8 +22,26 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
     <h1><?= Html::encode($this->title) ?></h1>
 
     <h4> <?= Html::encode($model->title) ?> </h4>
-
+<table>
+    <tr>
+        <td>
     <?= Html::img($model->picture, ['width'=>'350','height'=>'350'],['alt' => $model->name]);?>
+        </td>
+
+
+        <td>    <?= GoogleChart::widget(array('visualization' => 'PieChart',
+        'data' => array(
+            array('Budget Categories', 'Percent'),
+            array('Mandated', $model->budget_mandated),
+            array('Maintenance', $model->budget_maintenance),
+            array('Innovation', $model->budget_innovation),
+            array('Growth', $model->budget_growth)
+        ),
+        'options' => array('title' => 'Budget Divisions')));
+    ?>
+        </td>
+    </tr>
+</table>
 
     <h3>Personal Bio</h3>
 
@@ -41,16 +59,7 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
 
     <h3> Confirmed Budget: <?= $budgetsize->description ?> </h3>
 
-    <?= GoogleChart::widget(array('visualization' => 'PieChart',
-        'data' => array(
-            array('Budget Categories', 'Percent'),
-            array('Mandated', $model->budget_mandated),
-            array('Maintenance', $model->budget_maintenance),
-            array('Innovation', $model->budget_innovation),
-            array('Growth', $model->budget_growth)
-        ),
-        'options' => array('title' => 'Budget Divisions')));
-    ?>
+
 <p>    <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
     <?= Html::a('Delete', ['delete', 'id' => $model->id], [
         'class' => 'btn btn-danger',
