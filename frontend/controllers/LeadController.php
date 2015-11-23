@@ -8,6 +8,7 @@ use app\models\LeadSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * LeadController implements the CRUD actions for Lead model.
