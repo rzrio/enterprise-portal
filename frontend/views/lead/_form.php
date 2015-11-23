@@ -2,6 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\BudgetTier;
+
+$dataList=ArrayHelper::map(BudgetTier::find()->asArray()->all(), 'id', 'description');
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Lead */
@@ -26,7 +30,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'person_biography')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'budget_tier')->textInput() ?>
+    <?= $form->field($model, 'budget_tier')->dropDownList($dataList,['prompt'=>'Budget Size']) ?>
 
     <?= $form->field($model, 'budget_mandated')->textInput() ?>
 
