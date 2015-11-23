@@ -82,7 +82,8 @@ $this->title = "rzr.io"
                         foreach (Lead::find()->each() as $lead){
 
 
-                            echo "<li> " . Html::a($lead->name, ['lead/view','id' => $lead->id])  . "</li>";
+                            echo "<li> "  . Html::img($lead->picture, ['width'=>'350','height'=>'350'],['alt' => $lead->name])
+                        . Html::a($lead->name, ['lead/view','id' => $lead->id])  . "</li>";
 
 
                         }
