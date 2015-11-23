@@ -29,7 +29,8 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
         </td>
 
 
-        <td>    <?= GoogleChart::widget(array('visualization' => 'PieChart',
+        <td>        <h3> Confirmed Budget: <?= $budgetsize->description ?> </h3>
+            <?= GoogleChart::widget(array('visualization' => 'PieChart',
         'data' => array(
             array('Budget Categories', 'Percent'),
             array('Mandated', $model->budget_mandated),
@@ -57,7 +58,6 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
 
     <h4> Cost Reduction Areas: <strong><?= Html::encode($model->cost_reduction_areas) ?> </strong> </h4>
 
-    <h3> Confirmed Budget: <?= $budgetsize->description ?> </h3>
 
 
 <p>    <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
