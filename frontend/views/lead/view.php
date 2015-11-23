@@ -61,29 +61,33 @@ $budgetsize = BudgetTier::findOne(['level'=>$model->budget_tier]);
     ]) ?>
 </p>
 
-    <?=/* DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'company',
-            'company_url:url',
-            'name',
-            'title',
-            'contacts:ntext',
-            'company_description:ntext',
-            'person_biography:ntext',
-            'budget_tier',
-            'budget_mandated',
-            'budget_maintenance',
-            'budget_innovation',
-            'budget_growth',
-            'investment_priorities:ntext',
-            'platforms:ntext',
-            'cost_reduction_areas:ntext',
-            'endpoints:ntext',
-            'picture:image',
-        ],
-    ]) */?>
+    <?php
+//
+//     DetailView::widget([
+//        'model' => $model,
+//        'attributes' => [
+//            'id',
+//            'company',
+//            'company_url:url',
+//            'name',
+//            'title',
+//            'contacts:ntext',
+//            'company_description:ntext',
+//            'person_biography:ntext',
+//            'budget_tier',
+//            'budget_mandated',
+//            'budget_maintenance',
+//            'budget_innovation',
+//            'budget_growth',
+//            'investment_priorities:ntext',
+//            'platforms:ntext',
+//            'cost_reduction_areas:ntext',
+//            'endpoints:ntext',
+//            'picture:image',
+//        ],
+//    ]);
+//
+    ?>
 
 <!--    <?// json_encode($model->attributes); ?> -->
 
