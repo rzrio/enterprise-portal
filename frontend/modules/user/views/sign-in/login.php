@@ -11,8 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/splashstyle.css">
+<div style="position: relative;">
 <canvas id='canv'></canvas>
 
 
@@ -26,8 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
 
         </div>
-
-<script src="/js/splashindex.js"></script>
+</div>
 
 
 
