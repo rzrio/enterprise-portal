@@ -55,9 +55,6 @@ if (Yii::$app->request->isAjax) {
             return $this->goBack();
         } else {
 
-            if(Yii::$app->user->isGuest){
-                $this->layout = "splash";
-            }
 
             return $this->render('index', [
                 'model' => $model

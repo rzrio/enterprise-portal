@@ -16,13 +16,7 @@ $this->title = "rzr.io";
 
 <?php if(Yii::$app->user->isGuest): ?>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/splashstyle.css">
-    <script src="js/splashindex.js"></script>
 
-    <canvas id='canv' ></canvas>
-
-   <div>
     <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
 
 
@@ -32,7 +26,6 @@ $this->title = "rzr.io";
                                     <span
                                         class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
         <?php ActiveForm::end(); ?>
-       </div>
 
 
 
