@@ -9,8 +9,12 @@ use yii\widgets\ActiveForm;
 $this->title = Yii::t('frontend', 'Login');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?php echo Html::encode($this->title) ?></h1>
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/splashstyle.css">
+<div style="position: relative;">
+<canvas id='canv' z-index=-200></canvas>
 
 
         <div class="container" style="position: absolute; width: 20%; bottom: 10px; left: 10px;">
@@ -23,15 +27,14 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
 
         </div>
-
+</div>
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
+<script src="js/splashindex.js"></script>
 
 
 
 
 
 
-</div>
