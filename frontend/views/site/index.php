@@ -11,7 +11,6 @@ use yii\widgets\ActiveForm;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = "rzr.io";
-$this->layout = 'splash';
 ?>
 
 
