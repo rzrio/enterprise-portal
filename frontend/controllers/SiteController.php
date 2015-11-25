@@ -43,7 +43,10 @@ class SiteController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         $model = new LoginForm();
-        if (Yii::$app->request->isAjax) {
+
+
+
+if (Yii::$app->request->isAjax) {
             $model->load($_POST);
             Yii::$app->response->format = Response::FORMAT_JSON;
             return ActiveForm::validate($model);
@@ -51,6 +54,11 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {
+
+            if(Yii::$app->user->isGuest){
+                $this->layout = "splash";
+            }
+
             return $this->render('index', [
                 'model' => $model
             ]);
