@@ -11,7 +11,6 @@ use \frontend\modules\user\models\LoginForm;
 $model = new LoginForm();
 
 
-\frontend\assets\FrontendAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
@@ -26,9 +25,6 @@ $model = new LoginForm();
 </head>
 <body>
 <?php $this->beginBody() ?>
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet type=text/css>
-<link href=http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css rel=stylesheet type=text/css>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
         <?php if(Yii::$app->session->hasFlash('alert')):?>
             <?php echo \yii\bootstrap\Alert::widget([
                 'body'=>ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'body'),
