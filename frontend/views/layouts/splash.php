@@ -5,7 +5,6 @@ use yii\widgets\Breadcrumbs;
 
 /* @var $content string */
 
-$this->beginContent()
 ?>
 
         <?php if(Yii::$app->session->hasFlash('alert')):?>
@@ -15,4 +14,3 @@ $this->beginContent()
             ])?>
         <?php endif; ?>
         <?php echo $content ?>
-<?php $this->endContent() ?>
