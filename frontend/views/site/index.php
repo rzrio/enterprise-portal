@@ -10,7 +10,8 @@ use yii\widgets\ActiveForm;
 /* @var $searchModel app\models\PartnerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = "rzr.io"
+$this->title = "rzr.io";
+$this->layout = 'splash';
 ?>
 
 
