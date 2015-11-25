@@ -15,9 +15,14 @@ $this->title = "rzr.io"
 
 
 <?php if(Yii::$app->user->isGuest): ?>
-    <div class=current-info>
 
-        <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/splashstyle.css">
+    <script src="js/splashindex.js"></script>
+
+<div style="position:relative;">
+    <canvas id='canv' z-index=-200></canvas>
+    <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
 
 
         <span class=settings-name><?php echo $form->field($model, 'identity') ?></span>
@@ -26,8 +31,8 @@ $this->title = "rzr.io"
                                     <span
                                         class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
         <?php ActiveForm::end(); ?>
+</div>
 
-    </div>
 
 
 <?php else : ?>
