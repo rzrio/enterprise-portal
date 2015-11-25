@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\web\UploadedFile;
 
 /**
  * PartnerController implements the CRUD actions for Partner model.
@@ -72,9 +73,35 @@ class PartnerController extends Controller
      */
     public function actionCreate()
     {
+      // get the instance of the uploaded files.
+
+
         $model = new Partner();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $ndaname = $model->name . '-NDA';
+            $msaname = $model->name . '-MSA';
+            $agreementname = $model->name . '-PA';
+
+            //save the actual files into the uploads directory
+
+            $model->ndafile = UploadedFile::getInstance($model, 'ndafile');
+            $model->msafile = UploadedFile::getInstance($model, 'msafile');
+            $model->agreementfile = UploadedFile::getInstance($model, 'agreementfile');
+
+            $model->ndafile->saveAs('uploads/'. $ndaname . '.' . $model->ndafile->extension);
+            $model->msafile->saveAs('uploads/'. $msaname . '.' . $model->msafile->extension);
+            $model->agreementfile->saveAs('uploads/'. $agreementname . '.' . $model->agreementfile->extension);
+
+            //save the path in the db column
+
+            $model->nda_file = 'uploads/'. $ndaname . '.' . $model->ndafile->extension;
+            $model->msa_file = 'uploads/'. $msaname . '.' . $model->msafile->extension;
+            $model->agreement_file = 'uploads/'. $agreementname . '.' . $model->agreementfile->extension;
+
+
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

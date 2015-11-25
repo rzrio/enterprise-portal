@@ -10,7 +10,7 @@ use yii\widgets\ActiveForm;
 
 <div class="partner-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
@@ -24,10 +24,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'partnership_date')->textInput() ?>
 
+    <?= $form->field($model, 'ndafile')->fileInput(); ?>
+
     <?= $form->field($model, 'nda')->textarea(['rows' => 6]) ?>
 
+    <?= $form->field($model, 'msafile')->fileInput(); ?>
     <?= $form->field($model, 'msa')->textarea(['rows' => 6]) ?>
 
+    <?= $form->field($model, 'agreementfile')->fileInput(); ?>
     <?= $form->field($model, 'agreement')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'tier')->textInput() ?>

@@ -16,6 +16,9 @@ use Yii;
  * @property string $partnership_date
  * @property string $nda
  * @property string $msa
+ * @property string $nda_file
+ * @property string @msa_file
+ * @property string @agreement_file
  * @property string $agreement
  * @property integer $tier
  * @property string $tags
@@ -26,6 +29,11 @@ class Partner extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $ndafile;
+    public $msafile;
+    public $agreementfile;
+
+
     public static function tableName()
     {
         return 'partner';
@@ -38,8 +46,9 @@ class Partner extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'user_creator', 'url', 'address', 'partnership_date', 'nda', 'msa', 'agreement', 'tier', 'tags', 'categories'], 'required'],
-            [['description', 'address', 'nda', 'msa', 'agreement', 'tags', 'categories'], 'string'],
+            [['description', 'address', 'nda', 'msa', 'agreement', 'tags', 'categories', 'nda_file', 'msa_file', 'agreement_file'], 'string'],
             [['user_creator', 'tier'], 'integer'],
+            [['ndafile', 'msafile', 'agreementfile'], 'file'],
             [['partnership_date'], 'safe'],
             [['name', 'url'], 'string', 'max' => 40]
         ];
@@ -52,18 +61,21 @@ class Partner extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'user_creator' => 'User Creator',
+            'name' => 'Partner Name',
+            'description' => 'Partner Description',
+            'user_creator' => 'Partnership Creator',
             'url' => 'Url',
             'address' => 'Address',
             'partnership_date' => 'Partnership Date',
-            'nda' => 'Nda',
-            'msa' => 'Msa',
-            'agreement' => 'Agreement',
-            'tier' => 'Tier',
+            'nda' => 'Non-Disclosure Agreement Text',
+            'msa' => 'Master Services Agreement Text',
+            'agreement' => 'Partnership Agreement Text',
+            'tier' => 'Partnership Tier',
             'tags' => 'Tags',
             'categories' => 'Categories',
+            'ndafile' => 'Non-Disclosure Agreement File',
+            'msafile' => 'Master Services Agreement File',
+            'agreementfile' => 'Partnership Agreement File',
         ];
     }
 
