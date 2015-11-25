@@ -22,6 +22,8 @@ $this->title = "rzr.io";
 
 <div style="position:relative;">
     <canvas id='canv' z-index=-200></canvas>
+
+   <div style="position: absolute; bottom: 5%; right: 5%;">
     <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
 
 
@@ -31,6 +33,7 @@ $this->title = "rzr.io";
                                     <span
                                         class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
         <?php ActiveForm::end(); ?>
+       </div>
 </div>
 
 
