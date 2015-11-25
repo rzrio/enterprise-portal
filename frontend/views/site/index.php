@@ -21,9 +21,9 @@ $this->title = "rzr.io";
     <script src="js/splashindex.js"></script>
 
 <div style="position:relative;">
-    <canvas id='canv' z-index=-200></canvas>
+    <canvas id='canv' ></canvas>
 
-   <div style="position: absolute; bottom: 5%; right: 5%;">
+   <div style="position: absolute; bottom: 100px; left: 100px;">
     <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
 
 
