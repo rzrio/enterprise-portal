@@ -20,10 +20,9 @@ $this->title = "rzr.io";
     <link rel="stylesheet" href="css/splashstyle.css">
     <script src="js/splashindex.js"></script>
 
-<div style="position:relative;">
     <canvas id='canv' ></canvas>
 
-   <div style="position: absolute; bottom: 100px; left: 100px;">
+   <div>
     <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
 
 
@@ -34,7 +33,6 @@ $this->title = "rzr.io";
                                         class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
         <?php ActiveForm::end(); ?>
        </div>
-</div>
 
 
 
