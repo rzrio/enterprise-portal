@@ -99,7 +99,7 @@ class SignInController extends \yii\web\Controller
                 return $this->goHome();
             }
         }
-
+        $this->layout = "splash";
         return $this->render('signup', [
             'model' => $model
         ]);

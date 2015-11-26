@@ -9,9 +9,11 @@ use yii\widgets\ActiveForm;
 $this->title = Yii::t('frontend', 'Signup');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-signup">
-    <h1><?php echo Html::encode($this->title) ?></h1>
+<div style="position: relative;">
+    <canvas id='canv'></canvas>
 
+
+    <div class="container" style="position: absolute; width: 15%; bottom: 10px; left: 10px;">
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
