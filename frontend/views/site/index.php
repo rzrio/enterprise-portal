@@ -24,7 +24,6 @@ $this->title = "rzr.io";
 
 
 
-<?php else : ?>
     <div class="current-info">
 
         <h2> Welcome <?= Yii::$app->user->identity->username ?>, you're already logged in.</h2>
@@ -107,7 +106,6 @@ $this->title = "rzr.io";
     </div>
 
 
-<?php endif; ?>
 
 
 
