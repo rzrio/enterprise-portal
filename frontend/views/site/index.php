@@ -14,18 +14,13 @@ $this->title = "rzr.io";
 ?>
 
 
-<?php if(Yii::$app->user->isGuest): ?>
+<?php if(Yii::$app->user->isGuest){
+
+    $this->redirect('/user/sign-in/login', 200);
+
+} ?>
 
 
-    <?php $form = ActiveForm::begin(['id' => 'login-form', 'class' => 'form']); ?>
-
-
-        <span class=settings-name><?php echo $form->field($model, 'identity') ?></span>
-                                    <span
-                                        class=settings-name><?php echo $form->field($model, 'password')->passwordInput() ?></span>
-                                    <span
-                                        class=settings-name><?php echo Html::submitButton(Yii::t('frontend', 'Login'), ['id' => 'login-button', 'name' => 'login-button', 'class' => 'button button-load load-video', 'data-model' => '1']) ?></span>
-        <?php ActiveForm::end(); ?>
 
 
 
