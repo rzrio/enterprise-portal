@@ -46,7 +46,7 @@ class SignupForm extends Model
         return [
             'username'=>Yii::t('frontend', 'user'),
             'email'=>Yii::t('frontend', 'email'),
-            'password'=>Yii::t('frontend', 'keyword'),
+            'password'=>Yii::t('frontend', 'password'),
         ];
     }
 
