@@ -38,6 +38,11 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+if(Yii::$app->user->isGuest){
+
+    $this->redirect('/user/sign-in/login', 200);
+
+}
 
         $searchModel = new PartnerSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);

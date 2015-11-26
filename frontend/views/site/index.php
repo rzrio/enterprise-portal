@@ -14,11 +14,6 @@ $this->title = "rzr.io";
 ?>
 
 
-<?php if(Yii::$app->user->isGuest){
-
-    $this->redirect('/user/sign-in/login', 200);
-
-} ?>
 
 
 
