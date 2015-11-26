@@ -46,7 +46,13 @@ $config = [
 
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' => YII_ENV_DEV,
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'mail.gandi.net',
+                'username' => 'hello@rzr.io',
+                'password' => 'panther786!!!',
+            ],
             'messageConfig' => [
                 'charset' => 'UTF-8',
                 'from' => getenv('ADMIN_EMAIL')
