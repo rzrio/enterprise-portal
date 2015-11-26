@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <div class="container" style="position: absolute; width: 15%; bottom: 10px; left: 10px;">
-    <div class="row">
+    <div class="row" style="width: 150px; margin: 0; ">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                 <?php echo $form->field($model, 'username') ?>
