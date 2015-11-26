@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <canvas id='canv'></canvas>
 
 
-        <div class="container" style="position: absolute; width: 20%; bottom: 10px; left: 10px;">
+        <div class="container" style="position: absolute; width: 15%; bottom: 10px; left: 10px;">
 
             <?php $form = ActiveForm::begin(['id' => 'login-form','class' => 'form']); ?>
             <?php echo $form->field($model, 'identity') ?>
