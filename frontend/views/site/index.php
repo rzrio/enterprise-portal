@@ -15,7 +15,17 @@ $this->title = "rzr.io";
 
 
 
+<style>
 
+    .nav-pills > li.active > a {
+        background-color:red;
+    }
+
+       .nav-pills>li.active>a:hover {
+           background-color:red;
+       }
+
+</style>
 
 
 
