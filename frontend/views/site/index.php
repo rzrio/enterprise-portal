@@ -24,11 +24,12 @@ $this->title = "rzr.io";
 
 
     .nav-pills > li.active > a {
-        background-color:black;
+        background-color:red;
+        border-radius: 0px;
     }
 
        .nav-pills>li.active>a:hover {
-           background-color:red;
+           background-color:black;
        }
 
 </style>
