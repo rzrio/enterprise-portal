@@ -30,15 +30,15 @@ $model = new LoginForm();
 <link href=http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css rel=stylesheet type=text/css>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
 <div class="wrap">
-    <!--       <?php
+    <?php
     NavBar::begin([
         'brandLabel' => 'RZR.IO',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
-    ]); ?> -->
-    <!--    <?php /*echo Nav::widget([
+    ]); ?>
+    <?php /*echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('frontend', 'Home'), 'url' => ['/site/index']],
@@ -75,7 +75,7 @@ $model = new LoginForm();
             ]
         ]
     ]); */?>
-    <?php /*NavBar::end(); */?> -->
+    <?php /*NavBar::end(); */?>
 <div class="container">
     <?php echo $content ?>
 </div>
