@@ -17,6 +17,7 @@ $this->title = "rzr.io";
 
 <style>
 
+
     .nav-pills > li.active {
         background-color:red;
         border-radius: 0px;
@@ -29,7 +30,7 @@ $this->title = "rzr.io";
     }
 
        .nav-pills>li.active>a:hover {
-           background-color:black;
+           background-color:red;
        }
 
 </style>
