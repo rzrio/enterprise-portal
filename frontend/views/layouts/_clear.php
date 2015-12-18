@@ -38,7 +38,7 @@ $model = new LoginForm();
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]); ?>
-    <?php /*echo Nav::widget([
+    <?php echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('frontend', 'Home'), 'url' => ['/site/index']],
@@ -74,8 +74,8 @@ $model = new LoginForm();
                 }, array_keys(Yii::$app->params['availableLocales']))
             ]
         ]
-    ]); */?>
-    <?php /*NavBar::end(); */?>
+    ]); ?>
+    <?php NavBar::end(); ?>
 <div class="container">
     <?php echo $content ?>
 </div>
