@@ -942,7 +942,7 @@ function drawDisplay() {
 	
 	
 	cxa.font = "700 60px Roboto Condensed ";
-	tWidth2 = (cxa.measureText("LIFE ").width);
+	tWidth2 = (cxa.measureText("RAZORMIND ").width);
 	tWidth4 = (cxa.measureText("EARTH?").width);
 	
 	tWidth = tWidth1 + tWidth2 + tWidth3 + tWidth4;
@@ -956,7 +956,7 @@ function drawDisplay() {
 	cxa.fillText("IS THERE ON ", (halfX - (tWidth/2)) + tWidth1 + tWidth2, 300);
 	
 	cxa.font = "700 60px Roboto Condensed ";
-	cxa.fillText("LIFE ", (halfX - (tWidth/2)) + tWidth1, 300);
+	cxa.fillText("RAZORMIND ", (halfX - (tWidth/2)) + tWidth1, 300);
 	cxa.fillText("EARTH?", (halfX - (tWidth/2)) + tWidth1 + tWidth2 + tWidth3, 300);
 	
 	
@@ -1013,7 +1013,7 @@ function drawDisplay() {
 		
 		
 		cxa.font = "700 49px Roboto Condensed ";
-		tWidth2 = (cxa.measureText("LIFE ").width);
+		tWidth2 = (cxa.measureText("RAZORMIND ").width);
 		tWidth4 = (cxa.measureText("EARTH?").width);
 		
 		tWidth = tWidth1 + tWidth2 + tWidth3 + tWidth4;
@@ -1024,7 +1024,7 @@ function drawDisplay() {
 		cxa.fillText("IS THERE ON ", (halfX - (tWidth/2)) + tWidth1 + tWidth2, 145);
 		
 		cxa.font = "700 49px Roboto Condensed ";
-		cxa.fillText("LIFE ", (halfX - (tWidth/2)) + tWidth1, 145);
+		cxa.fillText("RAZORMIND ", (halfX - (tWidth/2)) + tWidth1, 145);
 		cxa.fillText("EARTH?", (halfX - (tWidth/2)) + tWidth1 + tWidth2 + tWidth3, 145);
 		
 		
