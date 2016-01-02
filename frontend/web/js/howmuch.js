@@ -942,7 +942,7 @@ function drawDisplay() {
 	
 	
 	cxa.font = "700 60px Roboto Condensed ";
-	tWidth2 = (cxa.measureText("RAZORMIND ").width);
+	tWidth2 = (cxa.measureText("RZR ").width);
 	tWidth4 = (cxa.measureText("EARTH?").width);
 	
 	tWidth = tWidth1 + tWidth2 + tWidth3 + tWidth4;
@@ -956,7 +956,7 @@ function drawDisplay() {
 	cxa.fillText("IS THERE ON ", (halfX - (tWidth/2)) + tWidth1 + tWidth2, 300);
 	
 	cxa.font = "700 60px Roboto Condensed ";
-	cxa.fillText("RAZORMIND ", (halfX - (tWidth/2)) + tWidth1, 300);
+	cxa.fillText("RZR ", (halfX - (tWidth/2)) + tWidth1, 300);
 	cxa.fillText("EARTH?", (halfX - (tWidth/2)) + tWidth1 + tWidth2 + tWidth3, 300);
 	
 	
@@ -1013,7 +1013,7 @@ function drawDisplay() {
 		
 		
 		cxa.font = "700 49px Roboto Condensed ";
-		tWidth2 = (cxa.measureText("RAZORMIND ").width);
+		tWidth2 = (cxa.measureText("RZR ").width);
 		tWidth4 = (cxa.measureText("EARTH?").width);
 		
 		tWidth = tWidth1 + tWidth2 + tWidth3 + tWidth4;
@@ -1024,7 +1024,7 @@ function drawDisplay() {
 		cxa.fillText("IS THERE ON ", (halfX - (tWidth/2)) + tWidth1 + tWidth2, 145);
 		
 		cxa.font = "700 49px Roboto Condensed ";
-		cxa.fillText("RAZORMIND ", (halfX - (tWidth/2)) + tWidth1, 145);
+		cxa.fillText("RZR ", (halfX - (tWidth/2)) + tWidth1, 145);
 		cxa.fillText("EARTH?", (halfX - (tWidth/2)) + tWidth1 + tWidth2 + tWidth3, 145);
 		
 		
@@ -1034,15 +1034,15 @@ function drawDisplay() {
 		/*var txt1 = 'All values are expressed in terms of dry biomass. Some of these values (biomass of domestic animals and people) can be calculated with an error no larger than ± 20%; other values are just the best available conservative estimates and their real totals may be significantly higher; estimates of bacterial, protist and invertebrate biomass have by far the greatest uncertainties, for subterranean and subsea bacteria even the order of the magnitude may be wrong.';
 		var txt2 = "The total mass of the Earth's biosphere is on the order 1,600 billion metric tons or 1.6 trillion metric tons. Plants account for about 2/3 of the total, bacteria for nearly a third, all animal biomass adds up to a small fraction of a percent of all planetary biomass.";*/
 		
-		var txt1 = "All data is displayed in terms of dry biomass (ecology). This is the collective mass of biological organisms if all the water were removed. The total mass of the Earth's biosphere is around 1,600 billion metric tons, also written as 1,600 gigatonnes (Gt).";
+		var txt1 = "Razormind is a network of companies which provide enterprise and internet based services. The group includes partners, investors, suppliers, architects, coders, project managers, and field experts. ";
 		
 		
 		
-		var txt2 = "Some of these values (biomass of domestic animals and people) can be calculated with an error no larger than ± 20%; other values are just the best available ";
+		var txt2 = "Services provided include enterprise architecture, big data, deep learning and ai, scalability, blockchain based tech, financial services, data centers, mobile architecture.";
 		
-		var txt3 = "conservative estimates and their real totals may be significantly higher. Estimates of bacterial, protist, and invertebrate biomass have by far the greatest uncertainties; for subterranean and subsea bacteria, even the order of the magnitude may be wrong.";
+		var txt3 = "There are just under 60 core staff and 300 support staff fulltime.";
 		
-		var txt4 = "Totals may not add up, as some smaller groupings have been omitted.";
+		var txt4 = "Razormind is privately owned and operated in a socially responsible manner.";
 	
 		printAtWordWrap(cxa, txt1, halfX-362, 224, 20, 342 );
 	
