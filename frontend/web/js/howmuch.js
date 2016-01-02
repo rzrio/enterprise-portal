@@ -2888,7 +2888,7 @@ function chart1() {
 		// CURRENT
 	
 	    circleDraw(0,0,"#33e8c7","#02bacb",1,bioAlpha);
-		headerDraw(0,-12.5,"LIFE      EARTH","ON","1,600,000,000,000 metric tons", "1,600 Gt",true,thisA);
+		headerDraw(0,-12.5,"RAZORMIND      GLOBALLY","WORK","58 Million GBP Turnover 2015 ", "58M GBP",true,thisA);
 		
 		if (masterRad>123) {
 		  throb();
