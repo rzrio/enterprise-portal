@@ -55,11 +55,11 @@ $this->title = "rzr.io";
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <h3>HOME</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Please choose an area and complete a workflow.</p>
                 </div>
                 <div id="partners" class="tab-pane fade">
                     <h3>Partners</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>A list of active partners with details, locations, and available products, services etc.</p>
                     <p>Partner Table: <?= Html::a('Here', ['partner/index']) ?></p>
 
                     <ul>
@@ -79,7 +79,7 @@ $this->title = "rzr.io";
 
                 <div id="opps" class="tab-pane fade">
                     <h3>Opportunities</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>A List of validated budget holders with confirmed budget sizes and purchasing priorities.</p>
                     <p>Opportunities Table: <?= Html::a('Here', ['lead/index']) ?></p>
 
                     <ul>
@@ -100,18 +100,18 @@ $this->title = "rzr.io";
 
                 <div id="tech" class="tab-pane fade">
                     <h3>Tech</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Technologies available for use in solutions throughout the Razormind Network.</p>
                     <p>Tech Table</p>
 
                 </div>
                 <div id="contracts" class="tab-pane fade">
                     <h3>Contracts</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>Active and available contracts. It is useful to review available contracts with partners, suppliers, and clients. Razormind acts as guarantor for each contract signed through this system.</p>
 
                 </div>
                 <div id="sales" class="tab-pane fade">
                     <h3>Sales</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Completed Sales are listed here - you can find the Parties, the Purchased Items, and other details including targets, geographies and metrics.</p>
                 </div>
             </div>
         </div>
